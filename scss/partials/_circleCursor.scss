@@ -1,4 +1,4 @@
-// Fonts
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 $open-sans: 'Open Sans', Helvetica, arial, sans-serif;
 $raleway: 'Raleway', 'Open Sans', sans-serif;
@@ -13,9 +13,8 @@ $raleway: 'Raleway', 'Open Sans', sans-serif;
 
 html {
     font-family: $open-sans;
-    color: $primary;
-    // background-color: $black;
-    // background-image: url('https: //milkinkstudio.com/wp-content/uploads/2022/11/02-1-1.webp');
+    color: white;
+    background-color: #333333;
 }
 
 h1,
@@ -35,7 +34,7 @@ img {
 .container {
     overflow: hidden;
     width: 100%;
-    max-width: $max-width;
+    // max-width: $max-width;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -63,9 +62,8 @@ img {
 }
 
 .cursor-dot {
-    $size: 8px;
-    width: $size;
-    height: $size;
+    width: 8px;
+    height: 8px;
     background-color: #ffffff;
 }
 
