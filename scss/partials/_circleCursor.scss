@@ -34,7 +34,6 @@ img {
 .container {
     overflow: hidden;
     width: 100%;
-    // max-width: $max-width;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -58,7 +57,9 @@ img {
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out,
-        transform 0.3s ease-in-out;
+    transform 0.3s ease-in-out;
+    mix-blend-mode: difference;
+    transition: transform .2s;
 }
 
 .cursor-dot {
@@ -69,7 +70,7 @@ img {
 
 .cursor-dot-outline {
     position: absolute;
-    border: solid 3px #ccc;
+    border: solid 3px #ffffff;
     width: 30px;
     height: 30px;
     border-radius: 50%;
