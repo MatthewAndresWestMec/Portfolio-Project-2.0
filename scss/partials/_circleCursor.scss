@@ -2,19 +2,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 $open-sans: 'Open Sans', Helvetica, arial, sans-serif;
 $raleway: 'Raleway', 'Open Sans', sans-serif;
+$cursor-color-main: #ffffff;
+$cursor-color-light:  #333333;
 
-
+$primary-color-main: #2B2B2B;
+$secondary-color-main: #313030;
+$accent-color-main: #ffffff;
+$font-color-main: #ffffff;
 
 *,
 *:before,
 *:after {
     box-sizing: border-box;
-}
-
-html {
-    font-family: $open-sans;
-    color: white;
-    background-color: #333333;
 }
 
 h1,
@@ -60,18 +59,36 @@ img {
     transform 0.3s ease-in-out;
     mix-blend-mode: difference;
     transition: transform .2s;
+    z-index: 9999 !important;
 }
 
 .cursor-dot {
     width: 8px;
     height: 8px;
-    background-color: #ffffff;
+    background-color: $cursor-color-main;
 }
 
 .cursor-dot-outline {
     position: absolute;
-    border: solid 3px #ffffff;
+    border: solid 3px $cursor-color-main;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+        z-index: 9999 !important;
+}
+
+
+.btn, button {
+    background-color: $primary-color-main;
+    border: none;
+    cursor: none;
+
+    &:hover {
+        background-color: $primary-color-main;
+        cursor: none !important;
+    }
+    &:active{
+    background-color: $primary-color-main !important;
+    cursor: none !important;
+    }
 }

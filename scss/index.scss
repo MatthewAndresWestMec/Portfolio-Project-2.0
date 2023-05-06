@@ -1,7 +1,12 @@
 @import './partials/circleCursor';
+$primary-color-main: #2B2B2B;
+$secondary-color-main: #696969;
+$accent-color-main: #ffffff;
+$primary-color-light: #DDD3C7;
 
-.navButton {
-    &:hover {
-        cursor: none;
-    }
+html {
+    font-family: $open-sans;
+    color: white;
+    background-color: $primary-color-main;
+
 }

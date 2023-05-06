@@ -115,7 +115,7 @@ var cursor = {
 
     if (self.cursorEnlarged) {
       self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-      self.$outline.style.transform = 'translate(-50%, -50%) scale(1.25)';
+      self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
     } else {
       self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
       self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
