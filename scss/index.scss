@@ -1,8 +1,13 @@
-@import './partials/circleCursor';
+@import './partials/circleCursor', url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+$open-sans: 'Open Sans', Helvetica, arial, sans-serif;
+$raleway: 'Raleway', 'Open Sans', sans-serif;
+$cursor-color-main: #ffffff;
+$cursor-color-light: #333333;
 $primary-color-main: #2B2B2B;
-$secondary-color-main: #696969;
+$secondary-color-main: #313030;
 $accent-color-main: #ffffff;
-$primary-color-light: #DDD3C7;
+$font-color-main: #ffffff;
+
 
 html {
     font-family: $open-sans;
@@ -10,3 +15,16 @@ html {
     background-color: $primary-color-main;
 
 }
+
+nav{
+    background-color: $primary-color-main;
+    .offcanvas-header, .offcanvas-body{
+            background-color: $primary-color-main;
+            color:$font-color-main;
+    }
+        // button{
+        //     background-color: $accent-color-main;
+        // }
+}
+
+

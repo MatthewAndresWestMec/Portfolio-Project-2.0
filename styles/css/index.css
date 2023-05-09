@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 *,
 *:before,
 *:after {
@@ -82,4 +83,12 @@ html {
   font-family: "Open Sans", Helvetica, arial, sans-serif;
   color: white;
   background-color: #2B2B2B;
+}
+
+nav {
+  background-color: #2B2B2B;
+}
+nav .offcanvas-header, nav .offcanvas-body {
+  background-color: #2B2B2B;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
