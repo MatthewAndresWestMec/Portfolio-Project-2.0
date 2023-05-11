@@ -13,6 +13,8 @@
 
 <body>
 
+<!-- Full Webpage Container -->
+<div class="container">
     <!-- Navigation -->
     <nav>
 
@@ -38,38 +40,41 @@
                     <li>Resume</li>
                     <li>Project</li>
                     <li>Contact</li>
-                    <li>
-                        <div class="dark-light-switch"></div>
+                    <li><div class="dark-light-switch">Switch Here</div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="sec-header">
+    <div class="contentSections" id="sec-header">
         <p>Header</p>
-    </section>
+    </div>
 
-    <section id="sec-about">
+    <div class="contentSections" id="sec-about">
+        <p>About</p>        
+    </div>
 
-    </section>
+    <div class="contentSections" id="sec-resume">
+        <p>Resume</p>
+    </div>
 
-    <section id="sec-resume">
+    <div class="contentSections" id="sec-contact">
+        <p>Contact</p>
+    </div>
 
-    </section>
-
-    <section id="sec-contact">
-
-    </section>
-
-    <footer id="footer">
-
+    <footer class="footer" id="footer">
+        <p>Footer</p>
     </footer>
 
     <!-- cursor objects -->
     <span id="circle" class="circle"></span>
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
+
+
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
