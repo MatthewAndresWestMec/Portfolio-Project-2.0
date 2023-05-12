@@ -1,40 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", "Open Sans", sans-serif;
-  text-align: center;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.col {
-  padding: 1rem;
-}
-
-* {
-  cursor: none;
-}
-
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
@@ -65,26 +30,17 @@ img {
   z-index: 9999 !important;
 }
 
-.btn, button {
-  background-color: #2B2B2B;
-  border: none;
-  cursor: none;
-}
-.btn:hover, button:hover {
-  background-color: #2B2B2B;
-  cursor: none !important;
-}
-.btn:active, button:active {
-  background-color: #2B2B2B !important;
-  cursor: none !important;
-}
-
-html {
+html, body {
   font-family: "Open Sans", Helvetica, arial, sans-serif;
   color: white;
   background-color: #2B2B2B;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+div {
+  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  color: white;
 }
 
 nav {
@@ -93,4 +49,76 @@ nav {
 nav .offcanvas-header, nav .offcanvas-body {
   background-color: #2B2B2B;
   color: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.col {
+  padding: 1rem;
+}
+
+* {
+  cursor: none;
+}
+
+.contentSections {
+  color: white;
+}
+
+nav {
+  padding-bottom: 30%;
+}
+
+#sec-resume button {
+  background-color: #313030;
+  color: #ffffff;
+}
+
+.tab-content {
+  text-align: center;
+}
+
+i {
+  color: #2B2B2B;
+}
+
+.btn,
+button {
+  background-color: #ffffff;
+  border: none;
+  cursor: none;
+}
+.btn:hover,
+button:hover {
+  background-color: #ffffff;
+  cursor: none !important;
+}
+.btn:active,
+button:active {
+  background-color: #ffffff !important;
+  cursor: none !important;
 }/*# sourceMappingURL=index.css.map */

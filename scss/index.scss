@@ -9,7 +9,7 @@ $accent-color-main: #ffffff;
 $font-color-main: #ffffff;
 
 
-html {
+html, body{
     font-family: $open-sans;
     color: white;
     background-color: $primary-color-main;
@@ -17,6 +17,11 @@ html {
     overflow-x: hidden;
 }
 
+div{
+    font-family: $open-sans;
+        color: white;
+
+}
 nav{
     background-color: $primary-color-main;
     .offcanvas-header, .offcanvas-body{
@@ -25,4 +30,75 @@ nav{
     }
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $raleway;
+    // text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.col {
+    padding: 1rem;
+}
+
+* {
+    cursor: none;
+}
+
+.contentSections{
+    color:white ;
+}
+
+nav{
+    padding-bottom: 30%;
+}
+
+#sec-resume button {
+    background-color: $secondary-color-main;
+    color: $font-color-main;
+}
+
+.tab-content{
+    text-align: center;
+}
+
+i {
+    color: $primary-color-main;
+}
+
+.btn,
+button {
+    background-color: $accent-color-main;
+    border: none;
+    cursor: none;
+
+    &:hover {
+        background-color: $accent-color-main;
+        cursor: none !important;
+    }
+
+    &:active {
+        background-color: $accent-color-main !important;
+        cursor: none !important;
+    }
+}

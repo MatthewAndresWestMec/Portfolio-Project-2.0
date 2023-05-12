@@ -10,40 +10,6 @@ $secondary-color-main: #313030;
 $accent-color-main: #ffffff;
 $font-color-main: #ffffff;
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $raleway;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-}
-
-.container {
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-.col {
-    padding: 1rem;
-}
-
-* {
-    cursor: none;
-}
 
 
 .cursor-dot,
@@ -78,17 +44,3 @@ img {
 }
 
 
-.btn, button {
-    background-color: $primary-color-main;
-    border: none;
-    cursor: none;
-
-    &:hover {
-        background-color: $primary-color-main;
-        cursor: none !important;
-    }
-    &:active{
-    background-color: $primary-color-main !important;
-    cursor: none !important;
-    }
-}
