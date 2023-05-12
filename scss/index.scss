@@ -17,6 +17,10 @@ html, body{
     overflow-x: hidden;
 }
 
+.card{
+    background-color: $secondary-color-main;
+    color: $font-color-main;
+}
 div{
     font-family: $open-sans;
         color: white;
@@ -102,3 +106,20 @@ button {
         cursor: none !important;
     }
 }
+
+.my-3{
+    margin{
+        top:3%;
+        bottom:3%;
+    }
+}
+
+// .form-control{
+//     border:none !important;
+//     color:$font-color-main !important;
+//     background-color: $primary-color-main !important;
+//     border-bottom: $accent-color-main !important;
+//     input{
+//         color:
+//     }
+// }

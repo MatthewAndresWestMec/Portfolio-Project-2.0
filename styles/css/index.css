@@ -38,6 +38,11 @@ html, body {
   overflow-x: hidden;
 }
 
+.card {
+  background-color: #313030;
+  color: #ffffff;
+}
+
 div {
   font-family: "Open Sans", Helvetica, arial, sans-serif;
   color: white;
@@ -121,4 +126,9 @@ button:hover {
 button:active {
   background-color: #ffffff !important;
   cursor: none !important;
+}
+
+.my-3 margin {
+  top: 3%;
+  bottom: 3%;
 }/*# sourceMappingURL=index.css.map */
