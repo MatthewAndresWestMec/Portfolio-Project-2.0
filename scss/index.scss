@@ -13,7 +13,8 @@ html {
     font-family: $open-sans;
     color: white;
     background-color: $primary-color-main;
-
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 nav{
