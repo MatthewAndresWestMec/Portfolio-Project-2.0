@@ -30,12 +30,17 @@
   z-index: 9999 !important;
 }
 
-html, body {
+html,
+body {
   font-family: "Open Sans", Helvetica, arial, sans-serif;
   color: white;
   background-color: #2B2B2B;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+img {
+  margin: auto;
 }
 
 .card {
@@ -51,7 +56,8 @@ div {
 nav {
   background-color: #2B2B2B;
 }
-nav .offcanvas-header, nav .offcanvas-body {
+nav .offcanvas-header,
+nav .offcanvas-body {
   background-color: #2B2B2B;
   color: #ffffff;
 }
@@ -92,6 +98,7 @@ img {
 
 .contentSections {
   color: white;
+  margin-bottom: 22.5% !important;
 }
 
 nav {
@@ -101,6 +108,7 @@ nav {
 #sec-resume button {
   background-color: #313030;
   color: #ffffff;
+  font-size: 3vh;
 }
 
 .tab-content {
@@ -131,4 +139,42 @@ button:active {
 .my-3 margin {
   top: 3%;
   bottom: 3%;
+}
+
+h1 {
+  margin-bottom: 5%;
+}
+
+.form-controls {
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  color: #ffffff !important;
+  background-color: #2B2B2B !important;
+  border: none !important;
+  border-bottom: #ffffff !important;
+}
+.form-controls textarea {
+  width: 100%;
+}
+.form-controls ::placeholder {
+  color: #ffffff !important;
+  opacity: 1;
+  border: none !important;
+}
+.form-controls:active {
+  background-color: #2B2B2B !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.form-controls:focus {
+  background-color: #2B2B2B !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.column-2 {
+  text-align: center;
+}
+.column-2 ul li {
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */
