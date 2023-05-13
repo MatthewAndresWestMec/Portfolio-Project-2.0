@@ -36,6 +36,7 @@
 }
 .header {
   font-size: 11vh;
+  padding-bottom: 10vh;
 }
 
 .navbar {
@@ -106,7 +107,7 @@ h6 {
 }
 
 h5 {
-  font-size: 6vh;
+  font-size: 7vh;
   color: #ffffff;
   font-weight: bolder;
 }
@@ -275,17 +276,13 @@ span {
   background-color: #ffffff;
 }
 
-.form-area {
-  padding-top: 7%;
-}
-
 .row.single-form {
   box-shadow: 0 2px 20px -5px #2B2B2B;
 }
 
 .left {
   background: #313030;
-  padding: 200px 98px;
+  padding: 180px 98px;
 }
 
 .left h2 {
@@ -304,7 +301,7 @@ span {
 }
 
 .right {
-  padding: 70px 100px;
+  padding: 50px 100px;
   position: relative;
 }
 
@@ -377,4 +374,46 @@ input ::placeholder {
 .btn-primary {
   border: 2px solid #2B2B2B !important;
   text-align: center;
+}
+
+.section-title {
+  position: fixed;
+  top: 50px;
+  /* adjust to desired fixed position */
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+  /* set z-index higher than other elements to keep it on top */
+}
+
+.section h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.section.projectSection h1 {
+  position: relative;
+}
+
+.section .text-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.navbar-toggler-icon {
+  width: 3em;
+  height: 3em;
+}
+
+center img {
+  height: 50vh !important;
+}
+
+.fp-tooltip {
+  font-size: 1.5em !important;
+  margin-right: 1vw !important;
 }/*# sourceMappingURL=index.css.map */
