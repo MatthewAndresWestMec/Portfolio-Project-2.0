@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./styles/css/index.css">
     <link src="	https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css	" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css"
+        integrity="sha512-DbP1b6q56Ud5q0L+lvw9COyyH/+pN1lVmySvun4UsH8vmfdIHou+PAHfMnGXf6Fvd9rYLjSojeuPhQz2euU1cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 
@@ -49,10 +52,10 @@
     </nav>
 
     <!-- Full Content Container -->
-    <div class="container">
+    <div class="container" id="fullpage">
         <!-- Navigation -->
 
-        <div class="contentSections" id="sec-header">
+        <div class="contentSections section" id="sec-header">
             <div>I Am Matthew Andres.
                 <br>
                 Aspiring Web Developer
@@ -61,7 +64,7 @@
 
         <br>
 
-        <div class="contentSections " id="sec-about">
+        <div class="contentSections section " id="sec-about">
             <h1>About Us</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -88,13 +91,13 @@
 
         <br>
 
-        <div class="contentSections " id="sec-resume">
+        <div class="contentSections section " id="sec-resume">
             <h1>Resume</h1>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4">
                         <!-- Vertical Tabs -->
-                        <div class="nav flex-column nav-pills px-5" id="v-pills-tab" role="tablist"
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <button class="nav-link active my-3" id="v-pills-Education-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-Education" type="button" role="tab"
@@ -162,7 +165,7 @@
 
         <br>
 
-        <div class="contentSections " id="sec-projects">
+        <div class="contentSections section " id="sec-projects">
             <h1>Projects</h1>
             <section class="pt-15 pb-15">
                 <div class="container-fluid">
@@ -327,7 +330,7 @@
 
         <br>
 
-        <div class="contentSections " id="sec-contact">
+        <div class="contentSections section " id="sec-contact">
             <h1>Contact</h1>
             <div class="container-fluid">
                 <div class="contact__wrapper shadow mt-n9">
@@ -421,6 +424,10 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="./JQuery/circleCursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"
+        integrity="sha512-GS3CSFQ4aj+0fL2a0wV1ouvpdbTZ3eEUriXTpXt50dc0CkO1fgyWuLoPA5NWy1PAWmcaZNneM+OAThgCqPnX+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JQuery/fullPageScrolling.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+@import url(http://fonts.googleapis.com/css?family=Inter);
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
@@ -30,9 +30,27 @@
   z-index: 9999 !important;
 }
 
+@font-face {
+  font-family: "HEADING";
+  src: url("../FONTS/Inter-VariableFont_slnt,wght.ttf");
+}
+.header {
+  font-size: 11vh;
+}
+
+.navbar {
+  z-index: 1000;
+  color: #ffffff;
+}
+
+nav {
+  z-index: 1000;
+  color: #ffffff;
+}
+
 html,
 body {
-  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  font-family: "Inter" !important;
   color: white;
   background-color: #2B2B2B;
   max-width: 100%;
@@ -49,7 +67,7 @@ img {
 }
 
 div {
-  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  font-family: "Inter";
   color: white;
 }
 
@@ -64,17 +82,51 @@ nav .offcanvas-body {
 
 *,
 *:before,
-*:after {
+*:after *:after {
   box-sizing: border-box;
+}
+*:hover,
+*:before:hover,
+*:after *:after:hover {
+  cursor: none !important;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
-  font-family: "Raleway", "Open Sans", sans-serif;
+  font-family: "Inter" !important;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+h5 {
+  font-size: 6vh;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3.2;
+}
+
+h3 {
+  font-size: 3.1;
+}
+
+.card-body {
+  text-align: center;
+}
+.card-body button {
+  margin-left: 2vh;
+  margin-right: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
 }
 
 img {
@@ -96,9 +148,12 @@ img {
   cursor: none;
 }
 
+p {
+  font-size: 3vh;
+}
+
 .contentSections {
   color: white;
-  margin-bottom: 22.5% !important;
 }
 
 nav {
@@ -121,19 +176,29 @@ i {
 
 .btn,
 button {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border: none;
   cursor: none;
+  font-size: large !important;
+  color: #2B2B2B !important;
 }
 .btn:hover,
 button:hover {
-  background-color: #ffffff;
   cursor: none !important;
 }
 .btn:active,
 button:active {
-  background-color: #ffffff !important;
   cursor: none !important;
+}
+
+.resume-btn {
+  background-color: #2B2B2B !important;
+  color: #ffffff !important;
+  font-size: 4vh !important;
+}
+
+.resume-btn-group {
+  border-right: 3px solid #ffffff;
 }
 
 .my-3 margin {
@@ -142,7 +207,7 @@ button:active {
 }
 
 h1 {
-  margin-bottom: 5%;
+  font-size: 8vh;
 }
 
 .form-controls {
@@ -177,4 +242,139 @@ h1 {
 }
 .column-2 ul li {
   list-style: none;
+}
+
+.fp-watermark {
+  display: none;
+}
+
+span {
+  background-color: #ffffff !important;
+}
+
+.nav-list a {
+  font-size: 13vh !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.nav-list a:hover {
+  border-right: 5px solid #ffffff;
+  padding-right: 5%;
+  padding-left: 5%;
+  transition: 1;
+}
+
+.img-fluid {
+  /* or to whatever you want here */
+  max-height: 40vh;
+  /* or to whatever you want here */
+}
+
+.btn-close {
+  background-color: #ffffff;
+}
+
+.form-area {
+  padding-top: 7%;
+}
+
+.row.single-form {
+  box-shadow: 0 2px 20px -5px #2B2B2B;
+}
+
+.left {
+  background: #313030;
+  padding: 200px 98px;
+}
+
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.left h2 span {
+  font-weight: 100;
+}
+
+.single-form {
+  background: #ffffff;
+}
+
+.right {
+  padding: 70px 100px;
+  position: relative;
+}
+
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #ffffff;
+}
+
+.form-control {
+  border: 2px solid #2B2B2B;
+}
+
+.right button {
+  border: none;
+  border-radius: 0;
+  background: #252525;
+  width: 180px;
+  color: #ffffff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background-color: #313030;
+}
+
+/*responsive*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+label {
+  color: #2B2B2B !important;
+}
+
+input ::placeholder {
+  color: #2B2B2B !important;
+}
+
+.btn-primary {
+  border: 2px solid #2B2B2B !important;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

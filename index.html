@@ -5,71 +5,328 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css"
+        integrity="sha512-DbP1b6q56Ud5q0L+lvw9COyyH/+pN1lVmySvun4UsH8vmfdIHou+PAHfMnGXf6Fvd9rYLjSojeuPhQz2euU1cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/css/index.css">
+    <link src="	https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css	" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css"
+        integrity="sha512-DbP1b6q56Ud5q0L+lvw9COyyH/+pN1lVmySvun4UsH8vmfdIHou+PAHfMnGXf6Fvd9rYLjSojeuPhQz2euU1cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 
 <body>
-
-<!-- Full Webpage Container -->
-<div class="container">
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h5>MA</h5></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
 
-        <!-- Navigation Open -->
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-            aria-controls="offcanvasTop">Toggle Nav</button>
+                <!-- Offcanvas Navigation  -->
 
-        <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-
-            <!-- Offcanvas Navigation  -->
-
-            <!-- Offcanvas Navigation Header -->
-            <div class="offcanvas-header">
-                <!-- Offcanvas Close Button -->
-                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                <!-- Offcanvas Navigation Header -->
+                <div class="offcanvas-header">
+                    <!-- Offcanvas Close Button -->
+                    <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!-- Offcanvas Body -->
+                <div class="offcanvas-body text-center">
+                    <ul class="navigation list-unstyled">
+                        <li data-bs-dismiss="offcanvas" class="nav-list"><a href="#about">ABOUT</a></li>
+                        <li data-bs-dismiss="offcanvas" class="nav-list"><a href="#resume">RESUME</a></li>
+                        <li data-bs-dismiss="offcanvas" class="nav-list"><a href="#project">PROJECT</a></li>
+                        <li data-bs-dismiss="offcanvas" class="nav-list"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- Offcanvas Body -->
-            <div class="offcanvas-body text-center">
-                <ul class="navigation list-unstyled">
-                    <li>About</li>
-                    <li>Resume</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <li><div class="dark-light-switch">Switch Here</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </nav>
 
-    <div class="contentSections" id="sec-header">
-        <p>Header</p>
-    </div>
+    <div id="fullpage" class="container-fluid">
 
-    <div class="contentSections" id="sec-about">
-        <p>About</p>        
-    </div>
+        <div class="section">
+            <div class="header">I Am Matthew Andres.
+                <br>
+                Aspiring Web Developer
+            </div>
+        </div>
+        <div class="section">
+            <h1>About</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>I am an aspiring web developer with a diverse range of technical skills including JavaScript, SCSS, HTML,
+                        jQuery, Bootstrap, and more. I enjoys building responsive and user-friendly websites that are optimized for
+                        performance. In my free time, I can be found playing video games, taking my dog named Waffles for a walk, and
+                        using Chat GPT to explore new topics and ideas.</p>
+                    </div>
+                    <div class="col-md-6 center">
+                        <img src="https://via.placeholder.com/250x250" alt="Placeholder Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Resume</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Vertical Tabs -->
+                        <div class="resume-btn-group nav flex-column nav-pills px-5" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="resume-btn nav-link active my-3" id="v-pills-Education-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Education" type="button" role="tab"
+                                aria-controls="v-pills-Education" aria-selected="true">Education</button>
+                            <button class="resume-btn nav-link my-3" id="v-pills-Extracurriculars-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Extracurriculars" type="button" role="tab"
+                                aria-controls="v-pills-Extracurriculars" aria-selected="false">Extracurriculars</button>
+                            <button class="resume-btn nav-link my-3" id="v-pills-Skills-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Skills" type="button" role="tab" aria-controls="v-pills-Skills"
+                                aria-selected="false">Skills</button>
+                            <button class="resume-btn nav-link my-3" id="v-pills-Experience-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Experience" type="button" role="tab"
+                                aria-controls="v-pills-Experience" aria-selected="false">Experience</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-Education" role="tabpanel"
+                                aria-labelledby="v-pills-Education-tab">
+                                <h2>Education</h2>
+                                <h3>Sunrise Mountain Highschool</h3>
+                                <h4>6/21/2020 - Present</h4>
+                                <p>Relevant Coursework: AP Computer Science, Game Design and Development, Calculus I & II, Marketing, Computer Programming</p>
+                                <br>
+                                <h3>West-MEC</h3>
+                                <h4>2022 - Present</h4>
+                                <p>This two-year interactive program prepares students for a career as a software developers. The program teaches students
+                                how to design and develop software, build apps for phones, tablets, websites, and write and test computer code.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-Extracurriculars" role="tabpanel"
+                                aria-labelledby="v-pills-Extracurriculars-tab">
+                                <h2>Extracurriculars</h2>
+                                <h3>Student Council</h3>
+                                <h4>8/15/2019-6/21/2020</h4>
+                                <p>Prepared school events and fundraisers. Learned how to plan and communicate throughout the entire school district.</p>
+                                <br>
+                                <h3>FBLA</h3>
+                                <h4>8/3/2022-Present</h4>
+                                <p>Participated in technical and career competitions through relevant career preparation and leadership experiences.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-Skills" role="tabpanel"
+                                aria-labelledby="v-pills-Skills-tab">
+                                <h2>Skills</h2>
+                                <p>I possess the ability to use various graphics tools to design and create high-quality images at specific locations.
+                                Furthermore, I have a comprehensive understanding of the System Development Life Cycle and can effectively implement its
+                                various steps, from planning to maintenance. I am also skilled at breaking down complex programming problems into
+                                manageable procedures for efficient development.</p>
+                                <br>
+                                <p>With my strong technical skills and attention to detail, I am an asset to any development team.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-Experience" role="tabpanel"
+                                aria-labelledby="v-pills-Experience-tab">
+                                <h2>Experience</h2>
+                                <p>As an aspiring web developer, I have acquired proficient skills in JavaScript, Bootstrap, CSS, SCSS, HTML, and various
+                                technical aspects of web development. My experience includes building responsive websites, optimizing website
+                                performance, and collaborating with cross-functional teams. I am constantly learning and improving my skills to create
+                                innovative solutions for web development challenges. In addition, I am highly organized, detail-oriented, and possess excellent problem-solving abilities, enabling me to
+                                deliver projects on time and within budget while exceeding client expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Projects</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 text-right">
+                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
+                            data-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
+                            data-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
 
-    <div class="contentSections" id="sec-resume">
-        <p>Resume</p>
-    </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
 
-    <div class="contentSections" id="sec-projects">
-        <p>Projects</p>
-    </div>
-    
-    <div class="contentSections" id="sec-contact">
-        <p>Contact</p>
-    </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.15&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
 
-    <footer class="footer" id="footer">
-        <p>Footer</p>
-    </footer>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 shadow-sm">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280"
+                                                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <button>Repo</button><button>Link</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Contact</h1>
+                <div class="form-area">
+                    <div class="container">
+                        <div class="row single-form g-0">
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="left">
+                                    <h2>Contact Us for <br>Business Enquires</h2>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="right">
+                                    <i class="fa fa-caret-left"></i>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Message</label>
+                                            <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 
     <!-- cursor objects -->
     <span id="circle" class="circle"></span>
@@ -77,15 +334,27 @@
     <div class="cursor-dot"></div>
 
 
-</div>
+    </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js	"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js	"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="./JQuery/circleCursor.js"></script>
+    <!-- full page scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"
+        integrity="sha512-GS3CSFQ4aj+0fL2a0wV1ouvpdbTZ3eEUriXTpXt50dc0CkO1fgyWuLoPA5NWy1PAWmcaZNneM+OAThgCqPnX+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./JQuery/fullPageScrolling.js"></script>
 </body>
 
 </html>

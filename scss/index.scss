@@ -1,6 +1,5 @@
-@import './partials/circleCursor', url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
-$open-sans: 'Open Sans', Helvetica, arial, sans-serif;
-$raleway: 'Raleway', 'Open Sans', sans-serif;
+@import './partials/circleCursor', url(http://fonts.googleapis.com/css?family=Inter) ;
+$Inter: 'Inter';
 $cursor-color-main: #ffffff;
 $cursor-color-light: #333333;
 $primary-color-main: #2B2B2B;
@@ -8,10 +7,26 @@ $secondary-color-main: #313030;
 $accent-color-main: #ffffff;
 $font-color-main: #ffffff;
 
+@font-face {
+    font-family: "HEADING";
+    src: url("../FONTS/Inter-VariableFont_slnt\,wght.ttf");
+}
 
+.header{
+    font-size: 11vh;
+}
+.navbar{
+    z-index: 1000;
+    color: $font-color-main;
+}
+
+nav {
+    z-index: 1000;
+    color: $font-color-main;
+}
 html,
 body {
-    font-family: $open-sans;
+    font-family: 'Inter' !important;
     color: white;
     background-color: $primary-color-main;
     max-width: 100%;
@@ -28,7 +43,7 @@ img {
 }
 
 div {
-    font-family: $open-sans;
+    font-family: 'Inter';
     color: white;
 
 }
@@ -46,18 +61,48 @@ nav {
 
 *,
 *:before,
-*:after {
+*:after 
+*:after{
     box-sizing: border-box;
+    &:hover{
+        cursor: none !important;
+    }
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
-    font-family: $raleway;
-    // text-align: center;
+    font-family: 'Inter' !important;
+    font-weight: 400;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
+h5{
+font-size: 6vh;
+color: $font-color-main;
+font-weight: bolder;
+}
+h2{
+    font-size: 3.2;
+}
+
+h3 {
+    font-size: 3.1;
+}
+
+.card-body{
+    text-align: center;
+    button{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        padding-left: 2vh;
+            padding-right: 2vh;
+    }
 }
 
 img {
@@ -79,10 +124,13 @@ img {
     cursor: none;
 }
 
+p{
+    font-size: 3vh;
+}
 .contentSections {
     color: white;
     // margin-top: 15% !important;
-    margin-bottom: 22.5% !important;
+    // margin-bottom: 22.5% !important;
 }
 
 nav {
@@ -93,6 +141,7 @@ nav {
     background-color: $secondary-color-main;
     color: $font-color-main;
     font-size: 3vh;
+    
 }
 
 .tab-content {
@@ -105,21 +154,29 @@ i {
 
 .btn,
 button {
-    background-color: $accent-color-main;
+    background-color: $accent-color-main !important;
     border: none;
     cursor: none;
-
+    font-size: large !important;
+    color: $primary-color-main !important;
     &:hover {
-        background-color: $accent-color-main;
         cursor: none !important;
     }
 
     &:active {
-        background-color: $accent-color-main  !important;
         cursor: none !important;
     }
 }
 
+.resume-btn{
+    background-color: $primary-color-main !important;
+        color: $font-color-main !important;
+        font-size: 4vh !important;
+}
+
+.resume-btn-group{
+    border-right: 3px solid $accent-color-main;
+}
 .my-3 {
     margin {
         top: 3%;
@@ -128,7 +185,7 @@ button {
 }
 
 h1 {
-    margin-bottom: 5%;
+   font-size: 8vh;
 }
 
 
@@ -169,4 +226,150 @@ h1 {
     ul li {
         list-style: none;
     }
+}
+
+.fp-watermark{
+    display: none;
+}
+
+span{
+    background-color: $accent-color-main !important;
+}
+
+.nav-list a{
+    font-size: 13vh !important;
+    text-decoration: none !important;
+    color: $font-color-main !important;
+    text-decoration: none !important;
+    &:hover{
+        border-right: 5px solid $accent-color-main;
+        padding-right: 5%;
+        padding-left: 5%;
+        transition: 1;
+    }
+}
+
+.img-fluid {
+    /* or to whatever you want here */
+    max-height: 40vh;
+    /* or to whatever you want here */
+}
+
+.btn-close{
+    background-color: $accent-color-main;
+}
+
+
+
+.form-area {
+    padding-top: 7%;
+}
+
+.row.single-form {
+    box-shadow: 0 2px 20px -5px $primary-color-main;
+}
+
+.left {
+    background: $secondary-color-main;
+    padding: 200px 98px;
+}
+
+.left h2 {
+    font-family: poppins;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.left h2 span {
+    font-weight: 100;
+}
+
+.single-form {
+    background: $accent-color-main;
+}
+
+.right {
+    padding: 70px 100px;
+    position: relative;
+}
+
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: $accent-color-main;
+}
+
+.form-control {
+    border: 2px solid $primary-color-main;
+}
+
+.right button {
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: $accent-color-main;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: $secondary-color-main;
+}
+
+
+/*responsive*/
+
+@media (min-width:768px) and (max-width:991px) {
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .left {
+        padding: 90px 15px;
+        text-align: center;
+    }
+
+    .left h2 {
+        font-size: 25px;
+    }
+
+    .right {
+        padding: 25px;
+    }
+
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 46%;
+    }
+
+    .right button {
+        width: 150px;
+        padding: 12px 0;
+    }
+
+}
+label{
+    color: $primary-color-main !important;
+}
+input{
+    ::placeholder{
+        color:$primary-color-main !important;
+    }
+}
+
+.btn-primary{
+    border: 2px solid $primary-color-main !important; 
+text-align: center;
 }
